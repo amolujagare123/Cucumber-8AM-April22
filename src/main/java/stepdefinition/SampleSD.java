@@ -1,5 +1,6 @@
 package stepdefinition;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -32,7 +33,7 @@ public class SampleSD {
         driver.findElement(By.id("login-password")).sendKeys("admin");
     }
 
-    @When("I click on login button")
+    @And("I click on login button")
     public void i_click_on_login_button() {
 
         System.out.println("I click on login button");
