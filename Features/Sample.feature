@@ -1,5 +1,8 @@
 Feature: All sample scenarios
 
+  Background: this will happen before every scenario
+    Given browser is opened
+    And it is maximized
 
   @loginReal @validData
   Scenario: To test the functionality of login button for valid input
@@ -12,7 +15,7 @@ Feature: All sample scenarios
   Scenario: To test the functionality of login button for valid input
     Given I am on login page of billing page
    #  When I enter correct username and correct password on billing page
-     When I enter username as "admin" and password as "password" on billing page
+     When I enter username as "admin" and password as "admin" on billing page
      And I click on login button of billing page
     Then I should be redirected to Dashboard
 

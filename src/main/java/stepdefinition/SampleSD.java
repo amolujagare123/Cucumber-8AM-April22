@@ -46,7 +46,7 @@ public class SampleSD {
 
         System.out.println("I should be redirected to home page");
 
-        String expected = "https://stock.scriptinglogic.net/dashboard.php";
+        String expected = "https://stock.scriptinglogic.net/dashboard.php1";
         String actual = driver.getCurrentUrl();
 
         System.out.println("expected="+expected);
@@ -54,5 +54,15 @@ public class SampleSD {
 
         Assert.assertEquals("this is not a home page",expected,actual);
 
+    }
+
+    @Given("browser is opened")
+    public void browserIsOpened() {
+        System.out.println(">>>>>>>>>>>> browser is opened" );
+    }
+
+    @And("it is maximized")
+    public void itIsMaximized() {
+        System.out.println(">>>>>>>>>>>> it is maximized" );
     }
 }
